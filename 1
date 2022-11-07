@@ -1,0 +1,27 @@
+https://onlinegdb.com/N67KsCt38
+
+
+/******************************************************************************
+
+Guilherme Latansa Barbosa
+Ex feito em aula valendo 0,5 para a nota de AP
+*******************************************************************************/
+#include <stdio.h>
+
+int imprimir(char c, int p){
+    int i, k;
+    for(i = 0; i < p; i++){
+        for(k = 0; k < i; k++){
+            printf("%c ", c);
+        }
+        printf("\n");
+    }
+    return p*p / 2;
+}
+
+int main()
+{
+    printf("%d", imprimir('*', 7));
+    return 0;
+}
+
